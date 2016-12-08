@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head><!-- bootstrapの呼び出し-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>9マス将棋</title>
+    <!-- Bootstrap��CSS�ǂݍ��� -->
+    <link href="{{ STATIC_URL }}css/bootstrap.min.css" rel="stylesheet">
+    <!-- jQuery�ǂݍ��� -->
+    <script src="{{ STATIC_URL }}js/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap��JS�ǂݍ��� -->
+    <script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+    	<style>
+    	 /* <!--背景画像挿入--> */
+			body {
+			  background: url({{ STATIC_URL }}main_2.jpg) center center / cover no-repeat fixed;
+			}
+		/* <!--タイトルの字体--> */
+			h1 {
+				font-weight: bold;
+				font-size: 300%;
+				font-family: serif;
+			}
+		/* <!-- 小タイトルの字体--> */
+			h2 {
+				font-weight: bold;
+				font-size: 200%;
+				font-family: serif;
+			}
+			button {
+				font-size: 28px;
+				width:100px;
+				height:50px;
+			}
+		</style>
+  </head>
+   {% block body %}
+   {% endblock body%}
+</html>

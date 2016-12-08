@@ -1,0 +1,67 @@
+{% extends "shougisite/page_base.html" %}
+{% block body %}
+<body>
+   <!-- タイトル-->
+      <div class="container">
+       <div align="center">
+        <h1>9マス将棋</h1>
+       </div>
+      </div>
+
+    <div class="container">
+        <form action="list.html" method="get">
+
+
+        <div class="row">
+         <div class="col-xs-12 col-lg-4 col-lg-offset-4">
+          <label for="inputID" class="sr-only">ID</label>
+          <input type="ID" id="inputID"  class="form-control" placeholder="ID" required autofocus>
+          <label for="inputPassword" class="sr-only">Password</label>
+          <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" value="remember-me"> ログイン状態を維持
+          </label>
+         </div>
+        </div>
+       </div>
+
+       <div class="row">
+        <div class="col-xs-12 col-lg-4 col-lg-offset-4">
+        <button class="btn-xxl btn-block btn-danger"  href="" type="submit">ログイン</button>
+        </div>
+       </div>
+
+        <!--button type="button" class="btn btn-block">サイズ指定</button-->
+      </form>
+      
+     <div class="container">
+
+      <h2></h2>
+
+       <div class="row">
+        <div class="col-xs-12 col-lg-4 col-lg-offset-4">
+		 <button class="btn-xxl btn-block btn-danger" href="" type="submit">新規会員登録</button>
+	    </div>
+       </div>
+	 </div>
+
+	   <div class="container">
+
+         <h2></h2>
+
+
+       <div class="row">
+        <div class="col-xs-12 col-lg-4 col-lg-offset-4">
+		  <button class="btn-xxl btn-block btn-danger" href="" type="submit">退会</button>
+		</div>
+	   </div>
+   </div>
+  </div>
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+{% endblock body %}
