@@ -7,3 +7,15 @@ from .models import Post
 
 def logout_top(request):
     return render(request, 'shougisite/logout_top.html', {})
+
+
+def login_top(request):
+    return render(request, 'shougisite/login_top.html', {})
+
+#mypage
+def mypage_top(request):
+    return render(request, 'shougisite/maypage_top.html', {})
+
+
+def mypage_add(request):
+    return render(request, 'shougisite/maypage_add.html', {})
